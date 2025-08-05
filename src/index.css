@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Helvetica, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.standard-color {
+  color: #3094ea;
+}
+tspan::after {
+  content: "%";
+}
+
+.ant-table-wrapper .ant-table-tbody > tr > td {
+  border-bottom: none;
+}
+
+.ant-table-wrapper .ant-table {
+  background-color: transparent;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > td {
+  border: none !important;
+}
+
+.my-flex {
+  display: flex;
+  flex-direction: row !important;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.my-flex .ant-col:last-child {
+  flex: 1;
+}
+.ant-drawer-right > .ant-drawer-content-wrapper {
+  width: 900px !important;
+}
+.ant-drawer-right > .ant-drawer-content-wrapper:has(.inner-drawer) {
+  width: 600px !important;
+}
+@media (max-width: 1200px) {
+  .ant-drawer-right > .ant-drawer-content-wrapper {
+    width: 400px !important;
+  }
+}
+[class^="ant-table"] [class^="ant-table"] {
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .my-flex {
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 530px) {
+  .my-flex {
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 535px) {
+  .my-flex {
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+.open-orders .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #3094ea !important;
+}
+
+.orders-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #3094ea !important;
+}
+
+.spot-trading .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: white !important;
+}
+
+[class^="dialog"][class^="shadowed"] {
+  display: none !important;
+}
+
+[class^="hsbXyP"][class^="bwLrVG"] {
+  background-color: transparent !important;
+}
+
+.toolbar-active {
+  color: #0ead98 !important;
+}
+
+.ant-collapse {
+  border: none !important;
+  background: transparent !important;
+}
+
+.ant-collapse-header {
+  align-items: center !important;
+}
+
+.custom-collapse .ant-collapse-arrow {
+  transform: rotate(90deg);
+}
+
+.custom-panel .ant-collapse-header {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.ant-collapse-item {
+  border-bottom: none !important;
+}
+
+.ant-collapse-content {
+  border-top: none !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+  background: transparent !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder:hover {
+  background: transparent !important;
+}
+
+.ask-row .price {
+  color: rgb(219, 85, 65) !important;
+}
+
+.bid-row .price-bids {
+  color: rgb(0, 133, 99) !important;
+}
