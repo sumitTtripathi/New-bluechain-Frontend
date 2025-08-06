@@ -5,10 +5,7 @@ import { pdfjs } from "react-pdf";
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 import styled from "styled-components";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 export const StyledTermsandConditionModal = styled(Modal)`
   .react-pdf__Page {
     width: 100% !important;
