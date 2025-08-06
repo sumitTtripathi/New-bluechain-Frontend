@@ -1,14 +1,14 @@
 import { StyledNavlink } from "../../../Components/Navbar/Navbar.styles";
 import { ROUTES } from "../../../Constants/Routes";
 import { capitalizeWord } from "../../../Utils/common";
-import { config } from "../../../config";
+import { Config } from "../../../Config";
 import { LoginContainer } from "../Login.styles";
 import {
   StyledLoginButton,
   StyledLoginInput,
   StyledLoginPasswordInput,
 } from "../../../GlobalStyles";
-import { GeetestCaptcha } from "../../../Captcha";
+import GeetestCaptcha from "../../../Components/GeetestCaptcha/GeetestCaptcha";
 import { memo } from "react";
 import { Form } from "antd";
 
@@ -45,12 +45,12 @@ const Step1 = ({
       <div className="login-title-container">
         <img src="/Logo/Icons/user.svg" alt="user" />
         <p className="login-title">
-          Login to your {capitalizeWord(config.APP_NAME)} account
+          Login to your {capitalizeWord(Config.APP_NAME)} account
         </p>
       </div>
       <p className="desc">
         Please login with your account with the{" "}
-        {capitalizeWord(config.APP_NAME)} <br />
+        {capitalizeWord(Config.APP_NAME)} <br />
         app
       </p>
       <div className="main-form">

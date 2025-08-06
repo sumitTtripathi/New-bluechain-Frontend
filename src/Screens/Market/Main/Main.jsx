@@ -27,7 +27,7 @@ import { AiOutlineSearch, AiFillStar } from "react-icons/ai";
 import { convertExponentialToDecimal } from "../../../Utils/common";
 import { useScrollTop } from "../../../Hooks/useScrollTop";
 import { Helmet } from "react-helmet";
-import { config } from "../../../config";
+import { Config } from "../../../Config";
 import CurrencyFormat from "react-currency-format";
 import CryptoTable from "../../../Components/CryptoTable/CryptoTable";
 import { useGetUserQuery } from "../../../Services/Auth";
@@ -223,7 +223,7 @@ const Main = () => {
         <FadeLoader />
       )}
       <Helmet>
-        <title>{config?.APP_NAME}</title>
+        <title>{CoinCardonfig?.APP_NAME}</title>
       </Helmet>
       <div className="market-overview-btn">
         <img

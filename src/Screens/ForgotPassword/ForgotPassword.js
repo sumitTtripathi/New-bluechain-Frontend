@@ -13,7 +13,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router";
 import { ROUTES } from "../../Constants/Routes";
 import { Helmet } from "react-helmet";
-import { config } from "../../config";
+import { Config } from "../../Config";
 import { OTPPurpose } from "../../Constants/OtpPupose";
 import Step3 from "./Step3/Step3";
 const ForgotPassword = () => {
@@ -70,7 +70,7 @@ const ForgotPassword = () => {
   return (
     <>
       <Helmet>
-        <title>{config?.APP_NAME}</title>
+        <title>{Config?.APP_NAME}</title>
       </Helmet>
       {currentStep === 1 && (
         <Step1 form={emailForm} handleSubmit={emailAddressSubmitHandler} />

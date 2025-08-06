@@ -5,7 +5,7 @@ import Step1 from "./Step1/Step1";
 import { useScrollTop } from "../../Hooks/useScrollTop";
 import { toast } from "react-toastify";
 import { VALIDATIONS } from "../../Constants/Validations";
-import { config as appConfig, config } from "../../config";
+import { Config as appConfig, Config } from "../../Config";
 import { capitalizeWord } from "../../Utils/common";
 
 import {
@@ -63,7 +63,7 @@ const Login = () => {
   // const [currentStep, setCurrentStep] = useState(1);
 
   const loginFormSubmit = (values) => {
-    if (captchaConfig.config.product === "bind") {
+    if (captchaConfig.Config.product === "bind") {
       if (window.captchaObj) {
         window.captchaObj.showCaptcha();
       } else {
@@ -76,7 +76,7 @@ const Login = () => {
   };
 
   const loginOTPFormSubmit = async (values) => {
-    if (captchaConfig.config.product === "bind") {
+    if (captchaConfig.Config.product === "bind") {
       if (window.captchaObj) {
         window.captchaObj.showCaptcha();
       } else {
@@ -210,7 +210,7 @@ const Login = () => {
 
   const captchaConfig = useMemo(() => {
     return {
-      config: {
+      Config: {
         captchaId: appConfig.GEETEST_KEY,
         language: "eng",
         product: "bind",
@@ -229,16 +229,16 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>{config?.APP_NAME}</title>
+        <title>{Config?.APP_NAME}</title>
       </Helmet>
 
       <LoginContainer>
         <div className="login-box">
           {/* Login Box Left Side */}
           <div className="left">
-            <img src={config?.LOGIN_LOGO} alt="globe" />
+            <img src={Config?.LOGIN_LOGO} alt="globe" />
             <p className="desc">
-              Explore the Crypto World with {capitalizeWord(config.APP_NAME)}
+              Explore the Crypto World with {capitalizeWord(Config.APP_NAME)}
             </p>
             <div className="minicard-container">
               {coinListData?.data?.data?.slice(0, 4)?.map((item, i) => {

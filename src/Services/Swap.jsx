@@ -10,7 +10,7 @@ import { rtkBaseQueryWithEncryption } from "../BaseQuery";
 // Define a service using a base URL and expected endpoints
 
 export const swapApi = createApi({
-  reducerPath: "swapApi",
+  reducerPath: "swapApi", 
   tagTypes: ["TOKENS"],
   baseQuery: rtkBaseQueryWithEncryption,
 

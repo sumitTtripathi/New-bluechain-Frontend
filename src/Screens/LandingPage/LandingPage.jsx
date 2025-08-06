@@ -185,17 +185,17 @@ const LandingPage = () => {
     window.addEventListener("resize", checkResize);
   }, [verticalCarouselItems, checkResize]);
   return (
-    <LandingPageContainer currentTheme={localStorage.getItem("theme")}>
+      <LandingPageContainer $currenttheme={localStorage.getItem("theme")}>
       {coinListDataLoading && <FadeLoader />}
       <StyledLandingPage>
         <h1 className="title main">
           {t("The Global Cryptocurrency Exchange")}
         </h1>
         <p className="subtitle">{t("Making Crypto Trading Easier")}</p>
-        <StyledForm currentTheme={localStorage.getItem("theme")}>
+        <StyledForm $currenttheme={localStorage.getItem("theme")}>
           {!token && (
             <Input
-              autocomplete="off"
+              autoComplete="off"
               // disabled  
               placeholder={t("Email Account")}
               className="input"

@@ -7,7 +7,7 @@ import {
 import { AiOutlineLeft } from "react-icons/ai";
 import { Button, Form } from "antd";
 import { useEffect, useState } from "react";
-import { GeetestCaptcha } from "../../../Captcha";
+import GeetestCaptcha from "../../../Components/GeetestCaptcha/GeetestCaptcha";
 import { useResendEmailOtpMutation } from "../../../Services/Auth";
 import { VALIDATIONS } from "../../../Constants/Validations";
 import { OTPPurpose } from "../../../Constants/OtpPupose";

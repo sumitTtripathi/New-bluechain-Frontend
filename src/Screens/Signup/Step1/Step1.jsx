@@ -2,7 +2,7 @@ import { StyledNavlink } from "../../../Components/Navbar/Navbar.styles";
 import { ROUTES } from "../../../Constants/Routes";
 // import { useScrollTop } from "../../Hooks/useScrollTop";
 import { capitalizeWord } from "../../../Utils/common";
-import { config } from "../../../config";
+import { Config } from "../../../Config";
 import { useScrollTop } from "../../../Hooks/useScrollTop";
 import {
   StyledCheckbox,
@@ -15,7 +15,7 @@ import { Form } from "antd";
 import { VALIDATIONS } from "../../../Constants/Validations";
 import { useState } from "react";
 import TermsandCondtionModal from "../../../Components/T&CModal/T&CModal";
-import { GeetestCaptcha } from "../../../Captcha";
+import GeetestCaptcha from "../../../Components/GeetestCaptcha/GeetestCaptcha";
 
 const Step1 = ({ handleSubmit, form, isLoading,captchaConfig }) => {
   const [isTermsAndConditionsModalOpen, setIsTermsAndConditionsModalOpen] =
@@ -60,7 +60,7 @@ const Step1 = ({ handleSubmit, form, isLoading,captchaConfig }) => {
             <div className="signup-title-container">
               <img src="/Logo/Icons/user.svg" alt="user" />
               <p className="signup-title">
-                Create your {capitalizeWord(config.APP_NAME)} account
+                Create your {capitalizeWord(Config.APP_NAME)} account
               </p>
             </div>
             <p className="desc">Start Exploring the Crypto World</p>
@@ -126,7 +126,7 @@ const Step1 = ({ handleSubmit, form, isLoading,captchaConfig }) => {
                   }}
                   className="terms"
                 >
-                  {capitalizeWord(config.APP_NAME)} Terms of Service
+                  {capitalizeWord(Config.APP_NAME)} Terms of Service
                 </span>
               </StyledCheckbox>
             </Form.Item>

@@ -1,5 +1,5 @@
 import { capitalizeWord } from "../../../Utils/common";
-import { config } from "../../../config";
+import { Config } from "../../../Config";
 import { LoginContainer } from "../Login.styles";
 import {
   SendCodeButton,
@@ -13,7 +13,7 @@ import { toast } from "react-toastify";
 import { useSendPhoneOtpMutation } from "../../../Services/Auth";
 import { VALIDATIONS } from "../../../Constants/Validations";
 import { useSelector } from "react-redux";
-import { GeetestCaptcha } from "../../../Captcha";
+import GeetestCaptcha from "../../../Components/GeetestCaptcha/GeetestCaptcha";
 
 const Step2 = ({
   captchaConfig,

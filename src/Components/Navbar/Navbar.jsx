@@ -41,9 +41,11 @@ const SPOTITEMS = [
 // Array of navbar menu
 const NavMenuItems = [
   { name: "Market", to: ROUTES.MARKET },
-  { name: "Spot", to: `${ROUTES.SPOT}/BTC` },
+  // { name: "Spot", to: `${ROUTES.SPOT}/BTC` },
+    { name: "Spot", to: `` },
   { name: "Perpetual", to: `${ROUTES.PERPETUAL}/BTC` },
-  { name: "Trading Bot", to: ROUTES.BOT_LANDING },
+  // { name: "Trading Bot", to: ROUTES.BOT_LANDING },
+    { name: "Trading Bot" },
 ];
 
 // Links Array used in Navbar

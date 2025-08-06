@@ -3,7 +3,7 @@ import Step2 from "./Step2/Step2";
 import Step1 from "./Step1/Step1";
 import { useScrollTop } from "../../Hooks/useScrollTop";
 import { VALIDATIONS } from "../../Constants/Validations";
-import { config as appConfig, config } from "../../config";
+import { Config as appConfig, Config } from "../../Config";
 import { toast } from "react-toastify";
 import {
   setToken,
@@ -34,7 +34,7 @@ const Signup = () => {
   useScrollTop();
 
   const signupFormSubmitHandler = async (values) => {
-    if (captchaConfig.config.product === "bind") {
+    if (captchaConfig.Config.product === "bind") {
       if (window.captchaObj) {
         window.captchaObj.showCaptcha();
       } else {
@@ -136,7 +136,7 @@ const Signup = () => {
   // Geetest Captcha Config
   const captchaConfig = useMemo(() => {
     return {
-      config: {
+      Config: {
         captchaId: appConfig.GEETEST_KEY,
         language: "eng",
         product: "bind",
@@ -152,7 +152,7 @@ const Signup = () => {
   return (
     <>
       <Helmet>
-        <title>{config?.APP_NAME}</title>
+        <title>{Config?.APP_NAME}</title>
       </Helmet>{" "}
 
       {currentStep === 1 ? (

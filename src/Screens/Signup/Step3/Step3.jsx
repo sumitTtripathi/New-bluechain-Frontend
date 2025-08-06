@@ -15,7 +15,7 @@ import { toast } from "react-toastify";
 import { useForm } from "antd/es/form/Form";
 import { VALIDATIONS } from "../../../Constants/Validations";
 import { OTPPurpose } from "../../../Constants/OtpPupose";
-import { config } from "../../../config";
+import { Config } from "../../../Config";
 import { StepperContent } from "../../../Components/BindTotp/BindTotp.styles";
 import { SendCodeButton } from "../../../GlobalStyles";
 import { useSelector } from "react-redux";
@@ -226,7 +226,7 @@ const Step3 = ({
                     <div className="note">
                         Note: Please keep your private key safe. If your private key in the
                         authenticator is deleted mistakenly, you can recover by entering it
-                        manually. For your asset security, {config.APP_NAME} does not
+                        manually. For your asset security, {Config.APP_NAME} does not
                         support private key retrieving.
                     </div>
                     <Form
@@ -299,7 +299,7 @@ const Step3 = ({
             <div className="login-box">
                 {/* Login Box Left Side */}
                 <div className="left">
-                    <img src={config?.LOGIN_LOGO} alt="globe" />
+                    <img src={Config?.LOGIN_LOGO} alt="globe" />
                     <p className="desc">
                         Explore the Crypto World with {capitalizeWord(config.APP_NAME)}
                     </p>

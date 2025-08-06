@@ -6,7 +6,7 @@ import CoinJson from "../../Constants/Coin.json";
 import { Helmet } from "react-helmet";
 import { formatNumberDecimal } from "../../Common/Common";
 import { convertExponentialToDecimal } from "../../Utils/common";
-import { config } from "../../config";
+import { Config } from "../../Config";
 import CurrencyFormat from "react-currency-format";
 import { useDispatch } from "react-redux";
 import InnerAccountDrawer from "../CustomPrepDrawer/Components/InnerAccountDrawer/InnerAccountDrawer";
@@ -48,7 +48,7 @@ const TvBar = ({ baseAsset, quoteAsset, hlCoinPriceData }) => {
       <Helmet>
         <title>{`${
           convertExponentialToDecimal(hlCoinPriceData?.price) ||
-          config?.APP_NAME
+          Config?.APP_NAME
         }-${baseAsset}/${quoteAsset}`}</title>
       </Helmet>
       <div className="coin-details-container">
